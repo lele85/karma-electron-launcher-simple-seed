@@ -1,0 +1,22 @@
+{
+  "name": "karma-electron-launcher-simple-seed",
+  "version": "1.0.0",
+  "main": "main_electron.js",
+  "description": "",
+  "scripts": {
+    "test": "./node_modules/.bin/karma start karma.conf.js",
+    "postinstall": "node -e \"var app_path='../app',app_link_path='node_modules/app',fs=require('fs');fs.exists(app_link_path,function(exists){exists||fs.symlinkSync(app_path,app_link_path,'dir')});\"",
+    "start": "./node_modules/.bin/electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron-prebuilt": "0.34.3"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.15",
+    "karma-electron-launcher": "0.0.3",
+    "karma-jasmine": "^0.3.6"
+  }
+}
