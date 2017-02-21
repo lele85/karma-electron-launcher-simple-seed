@@ -11,12 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron-prebuilt": "0.34.3"
+    "electron": "1.6.1"
   },
   "devDependencies": {
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.15",
-    "karma-electron-launcher": "0.0.3",
+    "karma-electron-launcher": "0.2.0",
     "karma-jasmine": "^0.3.6"
   }
 }

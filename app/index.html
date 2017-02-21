@@ -7,11 +7,9 @@
 <h1>TEST</h1>
 <ul>
     <li>Test Internal Module: 1 + 5 = <span id="addResult"></span></li>
-    <li>Test External Module: electronPath = <span id="electronPath"></span></li>
 </ul>
 <script>
     document.getElementById("addResult").innerHTML = require("app/Calc").add(1,5);
-    document.getElementById("electronPath").innerHTML = require("electron-prebuilt");
 </script>
 </body>
 </html>
